@@ -1,21 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: #eaeaea; /* page background /*
+  --color-bg: #293415; /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #405123;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  --color-logotype-bg: #1f1f1f;
+  --color-text-logotype: #c75000;
+  --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #556b2f;
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-bg: #c75000;
+  --color-link-hover: #a94400; /* used */
+  --color-link-active: #7b3200; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,12 +23,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: #c75000;
+  --color-headline-text-page: #eaeaea;
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: #1f1f1f;
+  --color-text-inverted: #eaeaea;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,20 +37,20 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: #eaeaea;
+  --color-cta-card-bg: #556b2f;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: #eaeaea;
+  --color-news-bg-inverted: #c75000;
+  --color-cta-newscard-bg: #556b2f;
+  --color-cta-newscard-bg-inverted: #7b3200;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-family-sans: "Inter", sans-serif;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1rem;
@@ -63,9 +63,9 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: ;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #eaeaea;
+  --color-infobox-1-bg: #556b2f;
+  --color-infobox-2-bg: #405123;
 }
 
 .display_none {
