@@ -1,7 +1,7 @@
 #head-txt {
   fill: rgb(54, 54, 54);
 }
-.info-graphic,
+
 .info-text {
   background-color: var(--color-info-bg);
   padding: 20px 0;
