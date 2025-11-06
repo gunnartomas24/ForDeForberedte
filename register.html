@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -22,7 +22,7 @@
           <a href="index.html"> FOR DE FORBEREDTE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Indbrud </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -37,10 +37,42 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Stærkere sammen</h2>
+          <p>Indberet en hændelse til netværket af Forberedte.</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <label for="name">Navn</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="signal">Signal Brugernavn</label>
+          <input type="text" id="signal" name="signal" />
+
+          <label for="koordinater">Koordinater</label>
+          <input type="text" name="koordinater" id="koordinater" required />
+
+          <label for="incident-type">Type af hændelse</label>
+          <select id="incident-type" name="incident-type" required>
+            <option value="" disabled selected>Vælg en type</option>
+            <option value="break-in">Indbrud</option>
+            <option value="suspicious-activity">Mistænkelig aktivitet</option>
+            <option value="kill-confirmed">Bekræftet Drab</option>
+            <option value="love">Kærlighed søges</option>
+            <option value="other">Andet</option>
+          </select>
+
+          <label for="description">Beskrivelse af hændelsen</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" id="submit-btn">Indsend</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>

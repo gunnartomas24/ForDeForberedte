@@ -39,5 +39,5 @@ function soldatKryds() {
   document.querySelector(".info-text-img").innerHTML =
     "<img src='svg/soldat_closeup.svg' alt='Soldat Billede'>";
   document.querySelector(".placeholder").textContent =
-    "En soldat/anarkist/kommunist/antifa/svensker. Han har invaderet dit land og det vil han fortryde, skyd ham!";
+    "Kunne være en soldat, anarkist, kommunist, antifa eller svensker. Han har invaderet dit land og det vil han fortryde, skyd ham!";
 }
