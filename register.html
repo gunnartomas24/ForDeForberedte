@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -22,8 +22,8 @@
           <a href="index.html"> FOR DE FORBEREDTE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Indbrud </a></li>
+          <li><a class="menuItem" href="register.html">Rapporter</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -34,19 +34,121 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>RAPPORTER</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Stærkere sammen</h2>
+          <p>Indberet en hændelse til netværket af Forberedte.</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jens Jensen"
+              required
+            />
+            <p class="error-text" id="name-error">Venligst udfyld dette felt</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="eksempel@mail.dk"
+              required
+            />
+            <p class="error-text" id="email-error">
+              Venligst udfyld dette felt
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="frekvens">Radiofrekvens</label>
+            <input
+              type="number"
+              id="frekvens"
+              name="frekvens"
+              min="85.00"
+              max="108.00"
+              step=".01"
+              placeholder="85,00-108,00"
+              required
+            />
+            <p class="error-text" id="frekvens-error">
+              Venligst udfyld dette felt
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="koordinater">Koordinater</label>
+            <input
+              type="text"
+              name="koordinater"
+              id="koordinater"
+              placeholder="55.67N 12.58E"
+              required
+            />
+            <p class="error-text" id="koordinater-error">
+              Venligst udfyld dette felt
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="incident-type">Type af hændelse</label>
+            <select id="incident-type" name="incident-type" required>
+              <option value="" disabled selected>Vælg en type</option>
+              <option value="Inbrud">Indbrud</option>
+              <option value="Mistænkelig Aktivitet">
+                Mistænkelig aktivitet
+              </option>
+              <option value="Kill Confirmed">Bekræftet Drab</option>
+              <option value="Kærlighed Søges">Kærlighed søges</option>
+              <option value="Andet">Andet</option>
+            </select>
+            <p class="error-text" id="type-error">Venligst udfyld dette felt</p>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Beskrivelse af hændelsen</label>
+            <textarea
+              class="form-group"
+              id="description"
+              name="description"
+              rows="5"
+              maxlength="1000"
+              required
+            ></textarea>
+            <p class="error-text" id="description-error">
+              Venligst udfyld dette felt
+            </p>
+          </div>
+          <button type="submit" id="submit-btn">Indsend</button>
+        </form>
       </section>
       <section id="form-summary">
+        <p class="display_none" id="submit-besked">
+          Tak for din henvendelse! Vi rapporterer tilbage hurtigst muligt.
+        </p>
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+        <div>
+          <article id="summary-info" class="display_none">
+            <div class="grid_2-3">
+              <p>Navn:</p>
+              <p><span id="navn-output"></span></p>
+              <p>Email:</p>
+              <p><span id="email-output"></span></p>
+              <p>Radiofrekvens:</p>
+              <p><span id="frekvens-output"></span></p>
+              <p>Koordinater:</p>
+              <p><span id="koordinater-output"></span></p>
+              <p>Hændelse:</p>
+              <p><span id="type-output"></span></p>
+              <p>Beskrivelse:</p>
+              <p><span id="description-output"></span></p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -76,6 +178,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
