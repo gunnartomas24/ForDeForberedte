@@ -1,17 +1,15 @@
 const form = document.querySelector("form");
 const navnOutput = document.querySelector("#navn-output");
 const emailOutput = document.querySelector("#email-output");
-const signalOutput = document.querySelector("#signal-output");
+const frekvensOutput = document.querySelector("#frekvens-output");
 const koordinaterOutput = document.querySelector("#koordinater-output");
+const typeOutput = document.querySelector("#type-output");
+const descOutput = document.querySelector("#description-output");
 
 function cancelPopup(event) {
   console.log("PreventStandard Active");
   event.preventDefault();
   form.querySelector(":user-invalid").focus();
-}
-
-function errorText(event) {
-  console.log("ErrorText Virker");
 }
 
 function handleSubmit(event) {
@@ -21,13 +19,20 @@ function handleSubmit(event) {
   const formData = new FormData(form);
   const name = formData.get("name");
   const email = formData.get("email");
-  const signal = formData.get("signal");
+  const frekvens = formData.get("frekvens");
   const koordinater = formData.get("koordinater");
+  const type = formData.get("incident-type");
+  const description = formData.get("description");
 
   navnOutput.textContent = name;
   emailOutput.textContent = email;
-  signalOutput.textContent = signal;
+  frekvensOutput.textContent = frekvens;
   koordinaterOutput.textContent = koordinater;
+  typeOutput.textContent = type;
+  descOutput.textContent = description;
+
+  document.querySelector("#submit-besked").classList.remove("display_none");
+  document.querySelector("#summary-info").classList.remove("display_none");
 
   form.reset();
 }
