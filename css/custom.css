@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #95a27d; /* page background /*
+  --color-bg: #c0caad; /* page background /*
 
   /* Header */
   --color-head-bg: #405123;
@@ -67,7 +67,9 @@
   --color-infobox-1-bg: #556b2f;
   --color-infobox-2-bg: #405123;
 
+  /* Forms */
   --form-background-color: #768f4b;
+  --info-background-color: #c75000;
 }
 
 .display_none {
