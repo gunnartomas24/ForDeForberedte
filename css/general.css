@@ -135,3 +135,10 @@ nav a:active {
 footer a {
   font-size: 0.7rem;
 }
+
+#logotype-wrapper {
+  fill: var(--color-text-logotype);
+}
+#OJEFARVE {
+  fill: var(--color-logotype-bg);
+}

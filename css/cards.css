@@ -79,6 +79,7 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  border: none;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
@@ -87,7 +88,32 @@
   background-color: var(--color-cta-newscard-bg-inverted);
   color: var(--color-text);
 }
-.cta_btn:after {
-  content: "\2192";
-  margin-left: 1rem;
+[popover] {
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c0caad;
+}
+[popover]::backdrop {
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Fjern eksisterende pil */
+summary::marker {
+  content: none;
+}
+summary::after {
+  content: " \2192";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: " –";
 }

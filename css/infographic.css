@@ -33,10 +33,10 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
-.info-box {
+#info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
   background-color: var(--color-infobox-1-bg);
 }
-.info-box:nth-of-type(2n) {
+#info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
