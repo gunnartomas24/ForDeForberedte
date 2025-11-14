@@ -135,3 +135,29 @@ nav a:active {
 footer a {
   font-size: 0.7rem;
 }
+
+#logotype-wrapper {
+  fill: var(--color-text-logotype);
+}
+#OJEFARVE {
+  fill: var(--color-logotype-bg);
+}
+
+.text-inverse {
+  color: var(--color-text-inverted);
+}
+
+.img-teaser {
+  padding-right: 15px;
+}
+.img-news {
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.img-popup {
+  padding: 20px 0;
+}
+
+ul {
+  list-style-position: inside;
+}
