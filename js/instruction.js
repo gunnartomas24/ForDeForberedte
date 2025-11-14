@@ -10,7 +10,7 @@ function mandKryds() {
   document.querySelector("#info-box").classList.remove("display_none");
   document.querySelector(".info-text h2").textContent = "EN MAND";
   document.querySelector(".info-text-img").innerHTML =
-    "<img src='svg/mand_closeup_ai.png' alt='Mand Billede'>";
+    "<img src='img/mand_closeup_ai.png' alt='Mand Billede'>";
   document.querySelector(".placeholder").textContent =
     "En fremmed mand. Det er hans fejl at han ikke selv har forberedt sig, og han har ingen ret til at nyde af din fremsynethed. Bør skydes.";
   document.querySelector(".info-box-titel").textContent = "Tips & Trick";
@@ -30,7 +30,7 @@ function kvindeKryds() {
   document.querySelector("#info-box").classList.remove("display_none");
   document.querySelector(".info-text h2").textContent = "EN KVINDE";
   document.querySelector(".info-text-img").innerHTML =
-    "<img src='svg/kvinde_closeup_ai.png' alt='Kvinde Billede'>";
+    "<img src='img/kvinde_closeup_ai.png' alt='Kvinde Billede'>";
   document.querySelector(".placeholder").textContent =
     "En fremmed kvinde. Kan være en god ressource at besidde under en invasion. Ofte flere fordele end ulemper, men kan bortskaffes på sigt. Bør reddes.";
   document.querySelector(".info-box-titel").textContent = "Fordele & Ulemper";
