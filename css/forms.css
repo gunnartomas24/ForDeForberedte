@@ -23,33 +23,33 @@ label {
   color: #1f1f1f;
 }
 input {
-  background-color: #95a27d;
-  border: solid 2px #556b2f;
-  color: #1f1f1f;
+  background-color: var(--color-input-bg);
+  border: solid 2px var(--input-border-color);
+  color: var(--color-text);
   font-size: 18px;
   border-radius: 8px;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
 select {
-  background-color: #95a27d;
-  border: solid 2px #556b2f;
+  background-color: var(--color-input-bg);
+  border: solid 2px var(--input-border-color);
   border-radius: 8px;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
 textarea {
-  background-color: #95a27d;
-  border: solid 2px #556b2f;
+  background-color: var(--color-input-bg);
+  border: solid 2px var(--input-border-color);
   border-radius: 8px;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
 :focus-visible {
-  outline: solid 2px #405123;
+  outline: solid 2px var(--focus-outline-color);
 }
 #submit-btn {
-  background-color: #556b2f;
+  background-color: var(--input-border-color);
   border: none;
   border-radius: 25px;
   padding: 10px;
@@ -59,7 +59,7 @@ textarea {
   color: #eaeaea;
 }
 #submit-btn:hover {
-  background-color: #405123;
+  background-color: var(--focus-outline-color);
 }
 
 #form-summary {

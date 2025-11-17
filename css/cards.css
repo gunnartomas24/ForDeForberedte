@@ -81,6 +81,20 @@
   border-radius: var(--border-radius);
   border: none;
 }
+.accordion-link {
+  color: var(--color-text-inverted);
+  font-weight: 500;
+  text-decoration: none;
+}
+.accordion-link::after {
+  content: " \2192";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.accordion-link:hover {
+  color: #1f1f1f;
+}
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
@@ -97,7 +111,7 @@
   padding: 20px 30px;
   border-radius: 10px;
   border: none;
-  background-color: #c0caad;
+  background-color: var(--color-popover-bg);
 }
 [popover]::backdrop {
   backdrop-filter: blur(2px);
