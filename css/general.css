@@ -116,6 +116,15 @@ header nav li a {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
 }
+header nav button {
+  background-color: var(--color-link-bg);
+  max-width: 123px;
+  max-height: 34.5px;
+  border: none;
+  padding: 0.33rem 0.5rem;
+  margin-left: 20px;
+  margin-right: 10px;
+}
 
 /* Pilen efter menu-tekst */
 header > nav li > a:after {
@@ -125,6 +134,9 @@ header > nav li > a:after {
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
   fill: var(--color-link-hover);
+}
+nav .menuItem:hover {
+  background-color: var(--color-link-hover);
 }
 
 nav a:active {
