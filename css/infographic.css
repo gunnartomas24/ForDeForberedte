@@ -18,11 +18,18 @@
   margin-bottom: 1rem;
 }
 .info-text h3 {
-  font-size: 0.8rem;
+  font-size: 24px;
   line-height: 0.8rem;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 15px;
   padding: 0;
+  text-align: center;
+}
+.info-text li {
+  margin-bottom: 10px;
+}
+.info-text img {
+  margin-bottom: 20px;
 }
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
@@ -33,10 +40,10 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
-#info-box {
+.info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
   background-color: var(--color-infobox-1-bg);
 }
-#info-box:nth-of-type(2n) {
+.info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }

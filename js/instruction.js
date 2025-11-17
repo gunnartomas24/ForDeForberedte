@@ -7,7 +7,7 @@ function mandKryds() {
   document.querySelector("#KRYDS-1").classList.remove("display_none");
   document.querySelector("#KRYDS-2").classList.add("display_none");
   document.querySelector("#KRYDS-3").classList.add("display_none");
-  document.querySelector("#info-box").classList.remove("display_none");
+  document.querySelector(".info-box").classList.remove("display_none");
   document.querySelector(".info-text h2").textContent = "EN MAND";
   document.querySelector(".info-text-img").innerHTML =
     "<img src='img/mand_closeup_ai.png' alt='Mand Billede'>";
@@ -27,7 +27,7 @@ function kvindeKryds() {
   document.querySelector("#KRYDS-1").classList.add("display_none");
   document.querySelector("#KRYDS-2").classList.add("display_none");
   document.querySelector("#KRYDS-3").classList.remove("display_none");
-  document.querySelector("#info-box").classList.remove("display_none");
+  document.querySelector(".info-box").classList.remove("display_none");
   document.querySelector(".info-text h2").textContent = "EN KVINDE";
   document.querySelector(".info-text-img").innerHTML =
     "<img src='img/kvinde_closeup_ai.png' alt='Kvinde Billede'>";
@@ -47,7 +47,7 @@ function soldatKryds() {
   document.querySelector("#KRYDS-1").classList.add("display_none");
   document.querySelector("#KRYDS-2").classList.remove("display_none");
   document.querySelector("#KRYDS-3").classList.add("display_none");
-  document.querySelector("#info-box").classList.remove("display_none");
+  document.querySelector(".info-box").classList.remove("display_none");
   document.querySelector(".info-text h2").textContent = "EN SOLDAT?";
   document.querySelector(".info-text-img").innerHTML =
     "<img src='svg/soldat_closeup_v2.svg' alt='Soldat Billede'>";
