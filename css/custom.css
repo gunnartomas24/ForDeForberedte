@@ -1,17 +1,18 @@
-:root {
+html {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #c0caad; /* page background /*
+  --color-bg: light-dark(#c0caad, #1f1f1f); /* page background /*
 
   /* Header */
-  --color-head-bg: #405123;
+  --color-head-bg: light-dark(#405123, #3e3e3e);
 
   /* Logotype */
-  --color-logotype-bg: #1f1f1f;
-  --color-text-logotype: #c75000;
+  --color-logotype-bg: light-dark(#1f1f1f, #c75000);
+  --color-text-logotype: light-dark(#c75000, #eaeaea);
   --font-logotype-size: 2.2rem;
 
   /* Global menu */
-  --color-menu-bg: #556b2f;
+  --color-menu-bg: light-dark(#556b2f, #7b3200);
   /* Links */
   --color-link-bg: #c75000;
   --color-link-hover: #a94400; /* used */
@@ -27,7 +28,7 @@
   --color-headline-text-page: #eaeaea;
 
   /* Tekst */
-  --color-text: #1f1f1f;
+  --color-text: light-dark(#1f1f1f, #eaeaea);
   --color-text-inverted: #eaeaea;
 
   /*  Marginer */
@@ -37,12 +38,12 @@
   --border-radius: 10px;
 
   /* Cards */
-  --color-card-bg: #768f4b;
-  --color-cta-card-bg: #a94400;
+  --color-card-bg: light-dark(#768f4b, #616161);
+  --color-cta-card-bg: light-dark(#a94400, #768f4b);
 
   /* news-cards */
-  --color-news-bg: #556b2f;
-  --color-news-bg-inverted: #768f4b;
+  --color-news-bg: light-dark(#556b2f, #616161);
+  --color-news-bg-inverted: light-dark(#768f4b, #3e3e3e);
   --color-cta-newscard-bg: #a94400;
   --color-cta-newscard-bg-inverted: #a94400;
 
@@ -64,19 +65,27 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #768f4b;
+  --color-info-bg: light-dark(#768f4b, #616161);
   --color-infobox-1-bg: #c75000;
   --color-infobox-2-bg: #c75000;
 
   /* Forms */
-  --form-background-color: #768f4b;
+  --form-background-color: light-dark(#768f4b, #616161);
   --info-background-color: #c75000;
-  --color-input-bg: #95a27d;
-  --input-border-color: #556b2f;
-  --focus-outline-color: #405123;
+  --color-input-bg: light-dark(#95a27d, #3e3e3e);
+  --color-label: light-dark(#1f1f1f, #eaeaea);
+  --input-border-color: light-dark(#556b2f, #1f1f1f);
+  --focus-outline-color: light-dark(#405123, #eaeaea);
+  --form-invalid: light-dark(#a94400, #c75000);
+  --color-placeholder: light-dark(#768f4b, #616161);
+  --submit-hover: light-dark(#eaeaea, #1f1f1f);
 
   /* Popover */
-  --color-popover-bg: #c0caad;
+  --color-popover-bg: light-dark(#c0caad, #3e3e3e);
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 .display_none {

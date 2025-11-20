@@ -20,7 +20,7 @@ label {
   font-weight: 700;
   font-size: 18px;
   margin-top: 20px;
-  color: #1f1f1f;
+  color: var(--color-label);
 }
 input {
   background-color: var(--color-input-bg);
@@ -60,6 +60,7 @@ textarea {
 }
 #submit-btn:hover {
   background-color: var(--focus-outline-color);
+  color: var(--submit-hover);
 }
 
 #form-summary {
@@ -105,17 +106,17 @@ textarea {
 .form-group:has(:user-invalid) {
   .error-text {
     display: block;
-    color: #a94400;
+    color: var(--form-invalid);
   }
   textarea,
   select,
   input {
-    outline: 2px solid #a94400;
+    outline: 2px solid var(--form-invalid);
   }
 }
 
 ::placeholder {
-  color: #768f4b;
+  color: var(--color-placeholder);
 }
 
 #submit-besked {
