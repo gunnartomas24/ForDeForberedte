@@ -6,6 +6,10 @@ html {
   /* Header */
   --color-head-bg: light-dark(#405123, #3e3e3e);
 
+  /* Footer */
+  --footer-bg-color: light-dark(#293415, #3e3e3e);
+  --footer-a-color: #eaeaea;
+
   /* Logotype */
   --color-logotype-bg: light-dark(#1f1f1f, #c75000);
   --color-text-logotype: light-dark(#c75000, #eaeaea);
