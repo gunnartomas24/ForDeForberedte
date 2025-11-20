@@ -6,6 +6,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 main {
   display: grid;
   row-gap: 1rem;
@@ -19,10 +20,18 @@ main {
 #instruction main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
+
+#forside_ikon {
+  max-height: 200px;
+  width: auto;
+  padding: 0 20px;
+  margin-left: 40px;
+  margin-right: 50px;
+}
 /* LAYOUT FOR HEADER AND FOOTER */
 footer {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 header nav,
 footer nav {
